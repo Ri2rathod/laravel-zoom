@@ -60,6 +60,7 @@ This will create a zoom.php config file within your config directory:-
 return [
     'apiKey' => env('ZOOM_CLIENT_KEY'),
     'apiSecret' => env('ZOOM_CLIENT_SECRET'),
+    'account_id' => env('ZOOM_ACCOUNT_ID'), 
     'baseUrl' => 'https://api.zoom.us/v2/',
     'token_life' => 60 * 60 * 24 * 7, // In seconds, default 1 week
     'authentication_method' => 'jwt', // Only jwt compatible at present
